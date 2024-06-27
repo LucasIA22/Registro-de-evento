@@ -1,0 +1,136 @@
+[debug] [2024-06-27T15:31:54.186Z] ----------------------------------------------------------------------
+[debug] [2024-06-27T15:31:54.189Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lucas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-27T15:31:54.190Z] CLI Version:   13.12.0
+[debug] [2024-06-27T15:31:54.190Z] Platform:      win32
+[debug] [2024-06-27T15:31:54.190Z] Node Version:  v20.15.0
+[debug] [2024-06-27T15:31:54.190Z] Time:          Thu Jun 27 2024 11:31:54 GMT-0400 (hora estándar de Chile)
+[debug] [2024-06-27T15:31:54.190Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-27T15:31:54.196Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-27T15:31:54.196Z] > authorizing via signed-in user (lucas.inc2212@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\lucas\pruebahoy
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-06-27T15:32:48.171Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-06-27T15:32:48.855Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-06-27T15:32:48.855Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project folkloric-air-425618-q1 (My First Project) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-06-27T15:32:53.827Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-06-27T15:32:53.828Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/folkloric-air-425618-q1
+[debug] [2024-06-27T15:32:54.971Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firebasedatabase.googleapis.com 200
+[debug] [2024-06-27T15:32:54.972Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2024-06-27T15:32:54.974Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2024-06-27T15:32:54.975Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/folkloric-air-425618-q1
+[debug] [2024-06-27T15:32:56.359Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2024-06-27T15:32:56.359Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2024-06-27T15:33:06.363Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-06-27T15:33:06.364Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/folkloric-air-425618-q1
+[debug] [2024-06-27T15:33:07.926Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firebasedatabase.googleapis.com 200
+[debug] [2024-06-27T15:33:07.927Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-06-27T15:33:07.940Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/folkloric-air-425618-q1 [none]
+[debug] [2024-06-27T15:33:08.273Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/folkloric-air-425618-q1 200
+[debug] [2024-06-27T15:33:08.274Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/folkloric-air-425618-q1 {"projectId":"folkloric-air-425618-q1","projectNumber":"437345885838","displayName":"My First Project","name":"projects/folkloric-air-425618-q1","resources":{"hostingSite":"folkloric-air-425618-q1"},"state":"ACTIVE","etag":"1_52e22871-6dea-4d46-8146-51941f191b46"}
+[debug] [2024-06-27T15:33:21.054Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/folkloric-air-425618-q1/locations/us-central1/instances databaseId=folkloric-air-425618-q1-default-rtdb&validateOnly=true
+[debug] [2024-06-27T15:33:21.055Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/folkloric-air-425618-q1/locations/us-central1/instances {"type":"default_database"}
+[debug] [2024-06-27T15:33:22.212Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/folkloric-air-425618-q1/locations/us-central1/instances 200
+[debug] [2024-06-27T15:33:22.212Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/folkloric-air-425618-q1/locations/us-central1/instances {"name":"projects/437345885838/locations/us-central1/instances/folkloric-air-425618-q1-default-rtdb","project":"projects/437345885838","databaseUrl":"https://folkloric-air-425618-q1-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2024-06-27T15:33:22.213Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/folkloric-air-425618-q1/locations/us-central1/instances databaseId=folkloric-air-425618-q1-default-rtdb
+[debug] [2024-06-27T15:33:22.213Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/folkloric-air-425618-q1/locations/us-central1/instances {"type":"default_database"}
+[debug] [2024-06-27T15:33:22.870Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/folkloric-air-425618-q1/locations/us-central1/instances 200
+[debug] [2024-06-27T15:33:22.870Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/folkloric-air-425618-q1/locations/us-central1/instances {"name":"projects/437345885838/locations/us-central1/instances/folkloric-air-425618-q1-default-rtdb","project":"projects/437345885838","databaseUrl":"https://folkloric-air-425618-q1-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-06-27T15:33:46.543Z] >>> [apiv2][query] GET https://folkloric-air-425618-q1-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2024-06-27T15:33:47.444Z] <<< [apiv2][status] GET https://folkloric-air-425618-q1-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2024-06-27T15:33:47.444Z] <<< [apiv2][body] GET https://folkloric-air-425618-q1-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for folkloric-air-425618-q1-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-06-27T15:33:47.455Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firestore.googleapis.com [none]
+[debug] [2024-06-27T15:33:47.456Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firestore.googleapis.com x-goog-quota-user=projects/folkloric-air-425618-q1
+[debug] [2024-06-27T15:33:48.609Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firestore.googleapis.com 200
+[debug] [2024-06-27T15:33:48.609Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/folkloric-air-425618-q1/services/firestore.googleapis.com [omitted]
+[debug] [2024-06-27T15:33:48.610Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/folkloric-air-425618-q1/databases/(default) [none]
+[debug] [2024-06-27T15:33:49.615Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/folkloric-air-425618-q1/databases/(default) 200
+[debug] [2024-06-27T15:33:49.616Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/folkloric-air-425618-q1/databases/(default) {"name":"projects/folkloric-air-425618-q1/databases/(default)","uid":"9f0a89f3-00a0-4877-a8fc-310e0d2a158d","createTime":"2024-06-27T12:55:51.350787Z","updateTime":"2024-06-27T12:55:51.350787Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-06-27T14:33:49.564652Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"INDYhNyN/IYDMOaOh+7q+4YD"}
+[debug] [2024-06-27T15:33:49.616Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-06-27T15:33:49.617Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-27T15:33:49.618Z] > authorizing via signed-in user (lucas.inc2212@gmail.com)
+[debug] [2024-06-27T15:33:49.618Z] [iam] checking project folkloric-air-425618-q1 for permissions ["firebase.projects.get"]
+[debug] [2024-06-27T15:33:49.619Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/folkloric-air-425618-q1:testIamPermissions [none]
+[debug] [2024-06-27T15:33:49.620Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/folkloric-air-425618-q1:testIamPermissions x-goog-quota-user=projects/folkloric-air-425618-q1
+[debug] [2024-06-27T15:33:49.620Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/folkloric-air-425618-q1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-27T15:33:50.854Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/folkloric-air-425618-q1:testIamPermissions 200
+[debug] [2024-06-27T15:33:50.854Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/folkloric-air-425618-q1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-06-27T15:34:07.644Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/folkloric-air-425618-q1/releases pageSize=10&pageToken=
+[debug] [2024-06-27T15:34:08.847Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/folkloric-air-425618-q1/releases 200
+[debug] [2024-06-27T15:34:08.848Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/folkloric-air-425618-q1/releases {"releases":[{"name":"projects/folkloric-air-425618-q1/releases/cloud.firestore","rulesetName":"projects/folkloric-air-425618-q1/rulesets/c1af759a-99e9-46be-8423-6b4fdf36dd4b","createTime":"2024-06-27T12:55:56.930851Z","updateTime":"2024-06-27T12:56:53.476512Z"}]}
+[debug] [2024-06-27T15:34:08.848Z] Found ruleset: projects/folkloric-air-425618-q1/rulesets/c1af759a-99e9-46be-8423-6b4fdf36dd4b
+[debug] [2024-06-27T15:34:08.849Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/folkloric-air-425618-q1/rulesets/c1af759a-99e9-46be-8423-6b4fdf36dd4b [none]
+[debug] [2024-06-27T15:34:09.739Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/folkloric-air-425618-q1/rulesets/c1af759a-99e9-46be-8423-6b4fdf36dd4b 200
+[debug] [2024-06-27T15:34:09.739Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/folkloric-air-425618-q1/rulesets/c1af759a-99e9-46be-8423-6b4fdf36dd4b [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-06-27T15:35:38.160Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/folkloric-air-425618-q1/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-06-27T15:35:38.166Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/folkloric-air-425618-q1/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-06-27T15:35:39.155Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/folkloric-air-425618-q1/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-06-27T15:35:39.155Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/folkloric-air-425618-q1/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/folkloric-air-425618-q1/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2024-06-27T15:35:39.179Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/folkloric-air-425618-q1/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-06-27T15:35:39.179Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/folkloric-air-425618-q1/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Emulators Setup
+[debug] [2024-06-27T15:38:20.356Z] ----------------------------------------------------------------------
+[debug] [2024-06-27T15:38:20.360Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lucas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-27T15:38:20.360Z] CLI Version:   13.12.0
+[debug] [2024-06-27T15:38:20.360Z] Platform:      win32
+[debug] [2024-06-27T15:38:20.360Z] Node Version:  v20.15.0
+[debug] [2024-06-27T15:38:20.361Z] Time:          Thu Jun 27 2024 11:38:20 GMT-0400 (hora estándar de Chile)
+[debug] [2024-06-27T15:38:20.361Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-27T15:38:20.372Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-27T15:38:20.373Z] > authorizing via signed-in user (lucas.inc2212@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\lucas\pruebahoy
+
